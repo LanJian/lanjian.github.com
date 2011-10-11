@@ -13,7 +13,7 @@ module Jekyll
     end
 
     def convert(content)
-      puts "converting content"
+      puts "Performing Haml Conversion."
       engine = Haml::Engine.new(content)
       engine.render
     end

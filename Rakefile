@@ -3,23 +3,27 @@ task :haml do
   print "Parsing Haml layouts..."
   system(%{
     cd _layouts/haml && 
-    for f in *.haml; do [ -e $f ] && haml $f ../${f%.haml}.html; done
+    for f in *.haml; do 
+      [ -e $f ] && 
+      haml $f ../${f%.haml}.html;
+    done
   })
   puts "done."
 end
 
 desc "Launch preview environment"
 task :default => [:haml, :clean] do
-  system "jekyll --auto --server"
+  system "jekyll ./ site/ --auto --server"
 end
 
 desc "Build site"
 task :build => [:haml, :clean] do |task, args|
-  system "jekyll"
+  system "jekyll ./ site/"
 end
 
 task :clean do
   system "rm -rf _site"
+  system "rm -rf site"
 end
 
 desc "Watch for layout haml changes"
