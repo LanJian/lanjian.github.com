@@ -1,3 +1,13 @@
+body {
+  background-color: black; }
+
+a {
+  color: white; }
+
 .page {
   width: 800px;
   margin: 0 auto; }
+
+#nav {
+  font-family: "Cambria";
+  font-size: 20; }
