@@ -5,3 +5,8 @@ function getImageByName(images, name) {
     }
   }
 }
+
+$(document).ready(function(){
+  $('#nav .selected').toggleClass('selected');
+  $('#nav #nav_gallery').toggleClass('selected');
+});

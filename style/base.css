@@ -1,5 +1,9 @@
 body {
-  background-color: black; }
+  background-image: url("/assets/images/scroll_painting.jpg");
+  background-attachment: fixed;
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  background-position: 69%; }
 
 .page {
   width: 940px;
@@ -8,13 +12,22 @@ body {
 .pageHeader {
   height: 200px;
   background-color: #ff3a2b;
-  background-color: #8a7e63; }
+  background-color: #333339; }
+
+.headerName {
+  color: mediumaquamarine;
+  font-family: "serif";
+  font-size: 60;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  padding-top: 50px; }
 
 .clear {
   clear: both; }
 
 .content {
-  box-shadow: inset 0 -5px 5px black;
+  box-shadow: inset 0 -5px 5px #555555;
   background: white; }
 
 #nav {
@@ -23,8 +36,8 @@ body {
   padding: 0;
   list-style: none; }
   #nav li {
-    border-top: 8px solid #00aaaa;
-    border-right: 1px solid #333333;
+    border-top: 8px solid #00aa99;
+    border-right: 1px solid #444444;
     float: left;
     display: block;
     position: relative;
@@ -32,10 +45,10 @@ body {
     height: 53px;
     z-index: 500;
     margin: 0;
-    background: #8a7e63;
+    background: #9f8877;
     box-shadow: inset 0 -30px 15px -20px #444444; }
     #nav li a {
-      font-family: "Arial";
+      font-family: "helvetica";
       font-weight: 900;
       padding: 13px 0 16px 0;
       display: block;
@@ -46,9 +59,9 @@ body {
     background: #c4b289;
     box-shadow: none; }
   #nav li.selected {
-    border-top: 8px solid #ff3a2b; }
+    border-top: 8px solid #cc3a2b; }
   #nav li.selected a {
-    color: #ffb273; }
+    color: #ffec96; }
   #nav ul {
     position: absolute;
     left: 0;
