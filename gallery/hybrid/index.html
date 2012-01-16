@@ -8,23 +8,45 @@
     <link href='/style/gallery.css' rel='stylesheet' type='text/css' />
     
     <script src='/js/jquery-1.6.4.min.js' type='text/javascript'></script>
+    <script src='/js/base.js' type='text/javascript'></script>
     
     <script src='/js/hybrid.js' type='text/javascript'></script>
     
-    <title>Hybrid</title>
+    <title>Jack Huang - Hybrid</title>
   </head>
   <body>
     <div class='page'>
-      <div id='nav'>
-        <a href='/'>Home</a>
-        <a href='/gallery'>Gallery</a>
-        <a href='http://github.com/lanjian'>Github</a>
-        <a href='/resume'>Resume</a>
-      </div>
-      <div>
+      <div class='pageHeader'></div>
+      <ul id='nav'>
+        <li class='selected'>
+          <a href='/'>HOME</a>
+        </li>
+        <li>
+          <a href='/gallery'>GALLERY</a>
+          <ul>
+            <li>
+              <a href='/gallery'>ARTWORK</a>
+            </li>
+            <li>
+              <a href='/gallery/photography.html'>PHOTOGRAPHY</a>
+            </li>
+          </ul>
+          <div class='clear'></div>
+        </li>
+        <li>
+          <a href='http://github.com/lanjian'>GITHUB</a>
+        </li>
+        <li>
+          <a href='/resume'>RESUME</a>
+        </li>
+      </ul>
+      <div class='clear'></div>
+      <div class='content'>
+        <div>
   <embed id='hybrid' src='hybrid.swf'></embed>
 </div>
 
+      </div>
     </div>
   </body>
 </html>

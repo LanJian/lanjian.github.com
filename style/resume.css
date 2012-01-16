@@ -1,15 +1,19 @@
 .fake {
   text-decoration: line-through; }
 
+#resume {
+  padding-bottom: 20px; }
+
 .header {
   background-color: #45423f;
   height: 110px;
   width: 100%;
   text-align: right;
   color: white;
-  width: 930px;
+  width: 940px;
   margin: 0 auto;
-  margin-top: 10px; }
+  margin-top: 0;
+  padding: 10px 0 10px 0; }
   .header a {
     color: white; }
 
@@ -22,7 +26,6 @@
   vertical-align: bottom; }
 
 .infoTable {
-  color: white;
   width: 100%; }
 
 .infoRightCol {
@@ -50,8 +53,7 @@
 
 .body {
   width: 900px;
-  margin: 0 auto;
-  color: white; }
+  margin: 0 auto; }
   .body h2 {
     margin-bottom: 0px;
     margin-top: 30px; }

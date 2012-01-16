@@ -1,3 +1,5 @@
-#hybrid {
-  width: 0px;
-  height: 0px; }
+#gallery {
+  height: 620px; }
+
+.galleria-container {
+  margin: 0 auto; }
