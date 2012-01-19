@@ -7,7 +7,8 @@ body {
 
 .page {
   width: 940px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  box-shadow: 0 -25px 20px 6px #666666; }
 
 .pageHeader {
   height: 200px;
@@ -41,7 +42,6 @@ body {
     display: block;
     position: relative;
     width: 234px;
-    height: 53px;
     z-index: 500;
     margin: 0;
     background: #9f8877;
@@ -49,11 +49,12 @@ body {
     #nav li a {
       font-family: "helvetica";
       font-weight: 900;
-      padding: 13px 0 16px 0;
+      padding: 13px 0 14px 0;
       display: block;
       text-align: center;
       text-decoration: none;
-      color: white; }
+      color: white;
+      text-shadow: 0 1px #333333; }
   #nav li:hover {
     background: #c4b289;
     box-shadow: none; }
