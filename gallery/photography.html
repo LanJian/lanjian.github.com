@@ -26,7 +26,7 @@
           <a href='/'>HOME</a>
         </li>
         <li id='nav_gallery'>
-          <a href='/gallery'>GALLERY</a>
+          <a href='/gallery'>PORTFOLIO</a>
           <ul>
             <li>
               <a href='/gallery'>ARTWORK</a>
@@ -55,36 +55,32 @@
       thumb: '/assets/photos/thumbs/panorama_factory.jpg',
       image: '/assets/photos/small/panorama_factory.jpg',
       big: '/assets/photos/panorama_factory.jpg',
+      layerFollow: true
     });
-    data['a'] = 100;
-    console.log(data['panorama_factory']);
     
     data.push({
       name: 'panorama_montreal',
       thumb: '/assets/photos/thumbs/panorama_montreal.jpg',
       image: '/assets/photos/small/panorama_montreal.jpg',
       big: '/assets/photos/panorama_montreal.jpg',
+      layerFollow: true
     });
-    data['a'] = 100;
-    console.log(data['panorama_montreal']);
     
     data.push({
       name: 'panorama_room',
       thumb: '/assets/photos/thumbs/panorama_room.jpg',
       image: '/assets/photos/small/panorama_room.jpg',
       big: '/assets/photos/panorama_room.jpg',
+      layerFollow: true
     });
-    data['a'] = 100;
-    console.log(data['panorama_room']);
     
     data.push({
       name: 'panorama_waterloo',
       thumb: '/assets/photos/thumbs/panorama_waterloo.jpg',
       image: '/assets/photos/small/panorama_waterloo.jpg',
       big: '/assets/photos/panorama_waterloo.jpg',
+      layerFollow: true
     });
-    data['a'] = 100;
-    console.log(data['panorama_waterloo']);
     
   //]]>
 </script>
@@ -100,7 +96,8 @@
       imageMargin: 50,
       width: 940,
       height: 600,
-      background: 'white'
+      background: 'white',
+      transition: 'fadeslide'
     });
   //]]>
 </script>

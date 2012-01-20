@@ -26,7 +26,7 @@
           <a href='/'>HOME</a>
         </li>
         <li id='nav_gallery'>
-          <a href='/gallery'>GALLERY</a>
+          <a href='/gallery'>PORTFOLIO</a>
           <ul>
             <li>
               <a href='/gallery'>ARTWORK</a>
@@ -55,106 +55,111 @@
       thumb: '/assets/images/thumbs/art.jpg',
       image: '/assets/images/small/art.jpg',
       big: '/assets/images/art.jpg',
+      layerFollow: true
     });
-    data['a'] = 100;
-    console.log(data['art']);
     
     data.push({
       name: 'billboard',
       thumb: '/assets/images/thumbs/billboard.jpg',
       image: '/assets/images/small/billboard.jpg',
       big: '/assets/images/billboard.jpg',
+      layerFollow: true
     });
-    data['a'] = 100;
-    console.log(data['billboard']);
     
     data.push({
       name: 'greeting',
       thumb: '/assets/images/thumbs/greeting.jpg',
       image: '/assets/images/small/greeting.jpg',
       big: '/assets/images/greeting.jpg',
+      layerFollow: true
     });
-    data['a'] = 100;
-    console.log(data['greeting']);
     
     data.push({
       name: 'interior',
       thumb: '/assets/images/thumbs/interior.jpg',
       image: '/assets/images/small/interior.jpg',
       big: '/assets/images/interior.jpg',
+      layerFollow: true
     });
-    data['a'] = 100;
-    console.log(data['interior']);
     
     data.push({
       name: 'jay',
       thumb: '/assets/images/thumbs/jay.jpg',
       image: '/assets/images/small/jay.jpg',
       big: '/assets/images/jay.jpg',
+      layerFollow: true
     });
-    data['a'] = 100;
-    console.log(data['jay']);
     
     data.push({
       name: 'portrait_illustrator',
       thumb: '/assets/images/thumbs/portrait_illustrator.jpg',
       image: '/assets/images/small/portrait_illustrator.jpg',
       big: '/assets/images/portrait_illustrator.jpg',
+      layerFollow: true
     });
-    data['a'] = 100;
-    console.log(data['portrait_illustrator']);
     
     data.push({
       name: 'portrait_painting',
       thumb: '/assets/images/thumbs/portrait_painting.jpg',
       image: '/assets/images/small/portrait_painting.jpg',
       big: '/assets/images/portrait_painting.jpg',
+      layerFollow: true
     });
-    data['a'] = 100;
-    console.log(data['portrait_painting']);
     
     data.push({
       name: 'raider',
       thumb: '/assets/images/thumbs/raider.jpg',
       image: '/assets/images/small/raider.jpg',
       big: '/assets/images/raider.jpg',
+      layerFollow: true
     });
-    data['a'] = 100;
-    console.log(data['raider']);
     
     data.push({
       name: 'zhujian',
       thumb: '/assets/images/thumbs/zhujian.jpg',
       image: '/assets/images/small/zhujian.jpg',
       big: '/assets/images/zhujian.jpg',
+      layerFollow: true
     });
-    data['a'] = 100;
-    console.log(data['zhujian']);
     
     data.push({
       name: 'scroll_painting',
       thumb: '/assets/images/thumbs/scroll_painting.jpg',
       image: '/assets/images/small/scroll_painting.jpg',
       big: '/assets/images/scroll_painting.jpg',
+      layerFollow: true
     });
-    data['a'] = 100;
-    console.log(data['scroll_painting']);
     
     data.push({
       name: 'portrait_in_motion',
       thumb: '/assets/images/thumbs/portrait_in_motion.jpg',
       image: '/assets/images/small/portrait_in_motion.jpg',
       big: '/assets/images/portrait_in_motion.jpg',
+      layerFollow: true
     });
-    data['a'] = 100;
-    console.log(data['portrait_in_motion']);
     
   //]]>
 </script>
 <div id='gallery'></div>
 <script type='text/javascript'>
   //<![CDATA[
+    function htmlify(title, desc){
+      return '<div><h2>'+title+'</h2><p>'+desc+'</p></div>';
+    }
     getImageByName(data, 'portrait_in_motion').link = 'portrait.html'
+    getImageByName(data, 'portrait_in_motion').layer = htmlify('Portrait in Motion', "Self portrait done in flash, inspired by Braid<br /><b>Click the image to view the video</b>");
+    getImageByName(data, 'scroll_painting').layer = htmlify('Seasons', "Chinese scroll painting inspired by ");
+    /**
+    getImageByName(data, 'zhujian').layer = htmlify('Sword Draw', "");
+    getImageByName(data, 'raider').layer = htmlify('Raider', "");
+    getImageByName(data, 'portrait_illustrator').layer = htmlify('Self Portrait 1', "");
+    getImageByName(data, 'portrait_painting').layer = htmlify('Self Portrait 2', "");
+    getImageByName(data, 'jay').layer = htmlify('Jay', "");
+    getImageByName(data, 'interior').layer = htmlify('Interior', "");
+    getImageByName(data, 'greeting').layer = htmlify('Thinking of You', "");
+    getImageByName(data, 'billboard').layer = htmlify('Times Square', "");
+    getImageByName(data, 'art').layer = htmlify('ART', "");
+    */
   //]]>
 </script>
 
@@ -168,7 +173,8 @@
       imageMargin: 50,
       width: 940,
       height: 600,
-      background: 'white'
+      background: 'white',
+      transition: 'fadeslide'
     });
   //]]>
 </script>

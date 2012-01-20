@@ -1,0 +1,78 @@
+#home {
+  background-color: #222229;
+  height: 574px;
+  font-family: Arial, Helvetica, Geneva, sans-serif;
+  padding: 10px; }
+
+.about {
+  background-color: #555557;
+  padding: 20px;
+  width: 600px;
+  float: left; }
+  .about p {
+    color: white;
+    font-size: 16px; }
+  .about h1 {
+    color: #ccffcc;
+    font-weight: 900;
+    font-size: 24px; }
+
+.contact {
+  float: right;
+  width: 210px;
+  height: 204px;
+  padding: 30px;
+  background: #82544d;
+  color: white; }
+  .contact h1 {
+    color: #ffddcc;
+    font-weight: 900;
+    font-size: 24px;
+    margin-bottom: 30px;
+    margin-top: 20px; }
+  .contact a {
+    text-decoration: none;
+    color: #ffddcc; }
+
+.panels {
+  margin-top: 10px; }
+
+.leftPanel {
+  width: 455px;
+  float: left;
+  margin-right: 5px; }
+
+.portfolioImg {
+  height: 300px;
+  background-image: url("/assets/images/small/jay.jpg");
+  background-position: 50% 60%;
+  background-size: 101%; }
+
+.rightPanel {
+  width: 455px;
+  float: right;
+  margin-left: 5px; }
+
+.projectsImg {
+  height: 300px;
+  background-image: url("/assets/tetris.png");
+  background-position: 50% 3%;
+  background-size: 101%; }
+
+.overlay {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 300px;
+  width: 465px;
+  text-decoration: none;
+  cursor: hand;
+  cursor: pointer; }
+  .overlay a {
+    display: none; }
+  .overlay h2 {
+    margin: auto;
+    padding: 134px 0 134px 0;
+    font-family: "avant garde";
+    color: white;
+    font-weight: normal;
+    text-align: center; }
